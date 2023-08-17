@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="container-principal">
+    <header>
+      <section class="conteiner-input-data">
+        <p class="titulo-input" id="p-day">DAY</p>
+        <input type="text" name="dia" id="dia" placeholder="DD" min="1" max="31">
+        <p class="msg-erro" id="dia-erro"></p>
+      </section>
+      <section class="conteiner-input-data">
+        <p class="titulo-input" id="p-mes">MONTH</p>
+        <input type="number" name="mes" id="mes" placeholder="MM" min="1" max="12">
+        <p class="msg-erro" id="mes-erro"></p>
+      </section>
+      <section class="conteiner-input-data">
+        <p class="titulo-input" id="p-ano">YEAR</p>
+        <input type="number" name="ano" id="ano" placeholder="YYY" min="1">
+        <p class="msg-erro" id="ano-erro"></p>
+      </section>
+    </header>
+    <section id="container-division">
+      <hr>
+      <button onclick="calcularIdade(); teste()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+    </section>
+    <main>
+      <section id="container-ano">
+        <h3><span id="span-ano" class="purple-part-data">- -</span> years</h3>
+      </section>
+      <section id="container-mes">
+        <h3><span id="span-mes" class="purple-part-data">- -</span> months</h3>
+      </section>
+      <section id="container-dia">
+        <h3><span id="span-dia" class="purple-part-data">- -</span> days</h3>
+      </section>
+    </main>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
